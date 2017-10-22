@@ -11,7 +11,6 @@ export default class MyNewComponent extends Component {
         this.fieldchange = this.fieldChange.bind(this)
         this.state = {"fieldValue": this.props.initValue,"banner":""}
         this.onclick = this.onClick.bind(this)
-        console.log("constructing this.props.initValue as " + this.props.initValue)
     }
 
     fieldChange(event){
