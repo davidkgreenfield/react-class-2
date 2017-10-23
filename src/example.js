@@ -88,8 +88,17 @@ function promiseFs(file){
   })
 }
 
-//promiseFs('./test.js').then(data=>{
-  //console.log(data.toString())
-//}).catch(err => {
-  //console.log(err)
-//})
+//promiseFs('./test.js').then(data=> console.log(data.toString())).catch(err => console.log(err))
+
+/*
+let myPromise = new Promise((resolve,reject) => {
+    fs.readFile('./test.js', (err,data) => {
+      if(err){
+        reject(err)
+      }
+      resolve(data)
+    })
+})
+
+myPromise.then(data => console.log(data.toString())).catch(err => console.log(err))
+*/

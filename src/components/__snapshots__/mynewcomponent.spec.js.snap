@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyNewComponent  shows up when rendered 1`] = `
+<div>
+  <h1>
+    
+  </h1>
+  <input
+    onChange={[Function]}
+  />
+   
+  <button
+    onClick={[Function]}
+  >
+    click to change banner
+  </button>
+  <p>
+    hello world!
+  </p>
+</div>
+`;
