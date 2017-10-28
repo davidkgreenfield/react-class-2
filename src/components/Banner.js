@@ -1,22 +1,20 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
-export default class Banner extends Component{
-  
-  constructor(props){
-    super(props)
-    console.log("Banner.constructor")
-  }
+export default class Banner extends Component {
 
-  componentWillMount(){
-    console.log("Banner.componentWillMount")
-  }
+    componentWillMount()
+    {
+        // console.log("Banner.componentWillMount")
+    }
 
-  render(){
-    console.log("Banner.render")
-    return <h1>{this.props.banner}</h1>
-  }
+    render() {
+        console.log("Banner.render")
+        return  <div>
+                    <h1>{this.props.banner}</h1>
+                </div>
+    }
 
-  componentDidMount(){
-    console.log("Banner.componentDidMount")
-  }
+    componentDidMount() {
+        // console.log("Banner.componentDidMount")
+    }
 }

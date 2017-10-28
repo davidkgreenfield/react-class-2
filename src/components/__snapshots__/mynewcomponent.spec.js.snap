@@ -2,20 +2,32 @@
 
 exports[`MyNewComponent  shows up when rendered 1`] = `
 <div>
-  <h1>
-    
-  </h1>
-  <input
-    onChange={[Function]}
-  />
-   
-  <button
-    onClick={[Function]}
-  >
-    click to change banner
-  </button>
-  <p>
-    hello world!
-  </p>
+  <section>
+    <div>
+      <h1>
+        
+      </h1>
+    </div>
+  </section>
+  <section>
+    <input
+      id="myInput"
+      onChange={[Function]}
+      onKeyPress={[Function]}
+    />
+     
+    <button
+      onClick={[Function]}
+      type="submit"
+    >
+      click to change band
+    </button>
+  </section>
+  <section>
+    <img
+      alt={undefined}
+      src={undefined}
+    />
+  </section>
 </div>
 `;

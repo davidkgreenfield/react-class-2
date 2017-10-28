@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`banner shows up when rendered 1`] = `
-<h1>
-  hello world!
-</h1>
+<div>
+  <h1>
+    hello world!
+  </h1>
+</div>
 `;
