@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 export default class Banner extends Component {
 
@@ -17,4 +18,8 @@ export default class Banner extends Component {
     componentDidMount() {
         // console.log("Banner.componentDidMount")
     }
+}
+
+Banner.propTypes = {
+    banner: PropTypes.string
 }

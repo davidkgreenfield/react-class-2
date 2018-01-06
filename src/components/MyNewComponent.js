@@ -9,7 +9,7 @@ export default class MyNewComponent extends Component {
 
     constructor(props) {
         super(props)
-        this.state = {banner: ""}
+        this.state = {banner: "We Love Rock and Roll"}
         this.fieldchange = this.fieldChange.bind(this)
         this.onclick = this.onClick.bind(this)
         this.handlekeypress = this.handleKeyPress.bind(this)
