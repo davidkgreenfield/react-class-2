@@ -1,6 +1,7 @@
 import history from '../history';
 import auth0 from 'auth0-js';
 import { AUTH_CONFIG } from './auth0-variables';
+import {auth0Logout} from '../components/api';
 
 export default class Auth {
     auth0 = new auth0.WebAuth({
@@ -52,6 +53,14 @@ export default class Auth {
         localStorage.removeItem('expires_at');
         // navigate to the home route
         history.replace('/');
+    }
+
+    signOut() {
+        this.logout();
+        this.auth0.logout({
+            returnTo: 'http://localhost:3000',
+            clientID: AUTH_CONFIG.clientId,
+        });
     }
 
     isAuthenticated() {
