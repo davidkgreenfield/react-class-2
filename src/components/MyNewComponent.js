@@ -8,36 +8,36 @@ import {getBandInfo} from './api'
 export default class MyNewComponent extends Component {
 
     constructor(props) {
-        super(props)
-        this.state = {banner: "We Love Rock and Roll"}
-        this.fieldchange = this.fieldChange.bind(this)
-        this.onclick = this.onClick.bind(this)
-        this.handlekeypress = this.handleKeyPress.bind(this)
+        super(props);
+        this.state = {banner: "We Love Rock and Roll"};
+        this.fieldchange = this.fieldChange.bind(this);
+        this.onclick = this.onClick.bind(this);
+        this.handlekeypress = this.handleKeyPress.bind(this);
     }
 
     fieldChange(event) {
-        this.fieldValue = event.target.value
+        this.fieldValue = event.target.value;
     }
 
     onClick(event) {
-        event.preventDefault()
-        let bandName = this.fieldValue
-        let self = this
+        event.preventDefault();
+        let bandName = this.fieldValue;
+        let self = this;
         getBandInfo(bandName).then(
             function (response) {
-                self.setState({bandImage: response.data.image_url, bandName: bandName, banner: bandName})
+                self.setState({bandImage: response.data.image_url, bandName: bandName, banner: bandName});
             }
         )
     }
 
     handleKeyPress(event) {
         if(event.charCode === 13){
-            this.onclick(event)
+            this.onclick(event);
         }
     }
 
     render() {
-        console.log("mynewcomponent.render()")
+        console.log("mynewcomponent.render()");
         return <div>
             <section>
                 <Banner banner={this.state.banner}/>

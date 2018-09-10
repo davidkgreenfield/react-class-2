@@ -1,5 +1,5 @@
 export const AUTH_CONFIG = {
-    domain: 'cloudtraining.auth0.com',
-    clientId: '3bjqUSSic9GWq76YqiEmZXCjdZhMBu1j',
+    domain: 'cloudtrainingio.auth0.com',
+    clientId: 'NRegNkjFZINAM5xXlExMUnuzuKU2tjyI',
     callbackUrl: 'http://localhost:3000/callback'
 }
